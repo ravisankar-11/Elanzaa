@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.loader {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #000;
+}
+
+.logo {
+	animation: zoomLogo 2s ease-out forwards;
+}
+
+.logo img {
+	width: 800px;
+	height: 800px;
+}
+
+@keyframes zoomLogo {
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}

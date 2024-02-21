@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website with Zooming Logo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="loader">
+		<div class="logo">
+			<img src="logo2.png" alt="Logo">
+		</div>
+	</div>
+	<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var logo = document.querySelector(".logo");
+  var nextUrl = "main.html";
+  
+  logo.addEventListener("animationend", function() {
+    window.location.href = nextUrl;
+  });
+});
+</script>
+</body>
+</html>
